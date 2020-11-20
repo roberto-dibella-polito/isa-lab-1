@@ -1,3 +1,5 @@
+vlib work
+
 vcom -93 -work ./work ../src/constants.vhd
 vcom -93 -work ./work ../src/clk_gen.vhd
 vcom -93 -work ./work ../src/data_maker.vhd
