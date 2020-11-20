@@ -1,0 +1,292 @@
+# //  ModelSim SE 6.2g Feb 21 2007 Linux 3.10.0-957.5.1.el7.x86_64
+# //
+# //  Copyright 1991-2007 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+source "compilation.tcl"
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# ** Error: (vcom-25) Invalid ModelSim library "./work". No _info file found.
+# No such file or directory. (errno = ENOENT)
+# /software/mentor/modelsim_6.2g/linux/vcom failed.
+vlib work
+# ** Error: (vlib-35) Failed to create directory "work".
+# File exists. (errno = EEXIST)
+source "compilation.tcl"
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Compiling package constants
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity clk_gen
+# -- Compiling architecture bhv of clk_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_maker
+# -- Compiling architecture bhv of data_maker
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_sink
+# -- Compiling architecture bhv of data_sink
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity fd
+# -- Compiling architecture structure of fd
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity reg_n
+# -- Compiling architecture bhv of reg_n
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity filter
+# -- Compiling architecture bhv of filter
+# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+# -- Compiling module tb_iir
+# 
+# Top level modules:
+# 	tb_iir
+# vsim work.tb_iir 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_iir(fast)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading work.clk_gen(bhv)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.data_maker(bhv)
+# ** Error: (vsim-7) Failed to open VHDL file "/home/isa32/isa-labs/Lab1/basic_architecture/testing/samples.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/SM
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading work.constants
+# Loading work.filter(bhv)#1
+# Loading work.reg_n(bhv)#1
+# Loading work.reg_n(bhv)#2
+# Loading work.fd(structure)
+# Loading work.data_sink(bhv)
+# ** Error: (vsim-7) Failed to open VHDL file "/home/isa32/isa-labs/Lab1/basic_architecture/implementation/sim/results_vhd.txt" in r+ mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DS
+# ** Error: (vsim-7) Failed to open VHDL file "/home/isa32/isa-labs/Lab1/basic_architecture/testing/resultsc.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DS
+# ** Fatal: (vsim-7) Failed to open VHDL file "/home/isa32/isa-labs/Lab1/basic_architecture/testing/samples.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 5 ns  Iteration: 2  Process: /tb_iir/SM/rd_file File: ../src/data_maker.vhd
+# Fatal error in Process rd_file at ../src/data_maker.vhd line 62
+# 
+source "compilation.tcl"
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Compiling package constants
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity clk_gen
+# -- Compiling architecture bhv of clk_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_maker
+# -- Compiling architecture bhv of data_maker
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_sink
+# -- Compiling architecture bhv of data_sink
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity fd
+# -- Compiling architecture structure of fd
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity reg_n
+# -- Compiling architecture bhv of reg_n
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity filter
+# -- Compiling architecture bhv of filter
+# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+# -- Compiling module tb_iir
+# 
+# Top level modules:
+# 	tb_iir
+# vsim work.tb_iir 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_iir(fast)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading work.clk_gen(bhv)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.data_maker(bhv)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading work.constants
+# Loading work.filter(bhv)#1
+# Loading work.reg_n(bhv)#1
+# Loading work.reg_n(bhv)#2
+# Loading work.fd(structure)
+# Loading work.data_sink(bhv)
+source "compilation.tcl"
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Compiling package constants
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity clk_gen
+# -- Compiling architecture bhv of clk_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_maker
+# -- Compiling architecture bhv of data_maker
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_sink
+# -- Compiling architecture bhv of data_sink
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity fd
+# -- Compiling architecture structure of fd
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity reg_n
+# -- Compiling architecture bhv of reg_n
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity filter
+# -- Compiling architecture bhv of filter
+# ** Error: ../src/filter.vhd(92): (vcom-1136) Unknown identifier "f_d1".
+# ** Error: ../src/filter.vhd(109): VHDL Compiler exiting
+# /software/mentor/modelsim_6.2g/linux/vcom failed.
+source "compilation.tcl"
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Compiling package constants
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity clk_gen
+# -- Compiling architecture bhv of clk_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_maker
+# -- Compiling architecture bhv of data_maker
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_sink
+# -- Compiling architecture bhv of data_sink
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity fd
+# -- Compiling architecture structure of fd
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity reg_n
+# -- Compiling architecture bhv of reg_n
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity filter
+# -- Compiling architecture bhv of filter
+# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+# -- Compiling module tb_iir
+# 
+# Top level modules:
+# 	tb_iir
+# vsim work.tb_iir 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_iir(fast)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading work.clk_gen(bhv)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.data_maker(bhv)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading work.constants
+# Loading work.filter(bhv)#1
+# Loading work.reg_n(bhv)#1
+# Loading work.reg_n(bhv)#2
+# Loading work.fd(structure)
+# Loading work.data_sink(bhv)

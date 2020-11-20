@@ -1,0 +1,12 @@
+initial begin
+$read_lib_saif("./saif/NangateOpenCellLibrary.saif");
+$set_gate_level monitoring("on");
+$set_toggle_region(UUT);
+$toggle_start;
+end
+always @ ( END_SIM_i ) begin
+if (END_SIM_i) begin
+$toggle_stop; $
+toggle_report("./saif/iir_adv_back.saif", 1.0e-9, "tb_iir_adv_pwr.UUT");
+end
+end
