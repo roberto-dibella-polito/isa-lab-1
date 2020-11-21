@@ -1,0 +1,72 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : filter_adv
+Version: O-2018.06-SP4
+Date   : Sat Nov 21 15:54:32 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: a1[7] (input port clocked by MY_CLK)
+  Endpoint: reg_filter_2/Q_reg[6]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  filter_adv         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  a1[7] (in)                                              0.00       0.50 r
+  mult_120/b[7] (filter_adv_DW_mult_tc_9)                 0.00       0.50 r
+  mult_120/U274/Z (XOR2_X1)                               0.07       0.57 r
+  mult_120/U429/ZN (NAND2_X2)                             0.06       0.64 f
+  mult_120/U471/ZN (OAI22_X1)                             0.07       0.70 r
+  mult_120/U363/ZN (AND2_X1)                              0.06       0.76 r
+  mult_120/U346/ZN (OAI21_X1)                             0.03       0.80 f
+  mult_120/U345/ZN (INV_X1)                               0.03       0.82 r
+  mult_120/U344/ZN (AOI21_X1)                             0.03       0.85 f
+  mult_120/U268/Z (XOR2_X1)                               0.08       0.93 f
+  mult_120/U267/ZN (XNOR2_X1)                             0.07       1.00 f
+  mult_120/U475/ZN (OAI21_X1)                             0.05       1.06 r
+  mult_120/U474/ZN (INV_X1)                               0.02       1.08 f
+  mult_120/U292/ZN (NOR2_X1)                              0.05       1.13 r
+  mult_120/U508/ZN (OAI22_X1)                             0.04       1.17 f
+  mult_120/U506/ZN (INV_X1)                               0.04       1.21 r
+  mult_120/U496/ZN (OAI21_X1)                             0.03       1.24 f
+  mult_120/U524/ZN (OAI21_X1)                             0.05       1.29 r
+  mult_120/U316/ZN (AND2_X1)                              0.05       1.34 r
+  mult_120/U313/ZN (OAI21_X1)                             0.03       1.37 f
+  mult_120/U279/ZN (XNOR2_X1)                             0.05       1.42 f
+  mult_120/product[15] (filter_adv_DW_mult_tc_9)          0.00       1.42 f
+  reg_filter_2/A[6] (reg_n_N7_4)                          0.00       1.42 f
+  reg_filter_2/U17/ZN (NAND2_X1)                          0.03       1.45 r
+  reg_filter_2/U16/ZN (OAI21_X1)                          0.03       1.48 f
+  reg_filter_2/Q_reg[6]/D (DFFR_X1)                       0.01       1.49 f
+  data arrival time                                                  1.49
+
+  clock MY_CLK (rise edge)                                1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  clock uncertainty                                      -0.07       1.53
+  reg_filter_2/Q_reg[6]/CK (DFFR_X1)                      0.00       1.53 r
+  library setup time                                     -0.04       1.49
+  data required time                                                 1.49
+  --------------------------------------------------------------------------
+  data required time                                                 1.49
+  data arrival time                                                 -1.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
