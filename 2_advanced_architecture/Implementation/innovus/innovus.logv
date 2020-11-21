@@ -1,0 +1,257 @@
+[11/21 17:28:31      0s] 
+[11/21 17:28:31      0s] Cadence Innovus(TM) Implementation System.
+[11/21 17:28:31      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/21 17:28:31      0s] 
+[11/21 17:28:31      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[11/21 17:28:31      0s] Options:	
+[11/21 17:28:31      0s] Date:		Sat Nov 21 17:28:31 2020
+[11/21 17:28:31      0s] Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB)
+[11/21 17:28:31      0s] OS:		CentOS Linux release 7.6.1810 (Core) 
+[11/21 17:28:31      0s] 
+[11/21 17:28:31      0s] License:
+[11/21 17:28:32      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[11/21 17:28:32      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/21 17:31:21     21s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[11/21 17:31:21     21s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[11/21 17:31:21     21s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[11/21 17:31:21     21s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[11/21 17:31:21     21s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[11/21 17:31:21     21s] @(#)CDS: CPE v17.11-s095
+[11/21 17:31:21     21s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[11/21 17:31:21     21s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[11/21 17:31:21     21s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[11/21 17:31:21     21s] @(#)CDS: RCDB 11.10
+[11/21 17:31:21     21s] --- Running on localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB) ---
+[11/21 17:31:22     21s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_18929_localhost.localdomain_isa32_gHfEbS.
+
+[11/21 17:31:22     21s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[11/21 17:31:31     22s] 
+[11/21 17:31:31     22s] **INFO:  MMMC transition support version v31-84 
+[11/21 17:31:31     22s] 
+[11/21 17:31:31     22s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/21 17:31:31     22s] <CMD> suppressMessage ENCEXT-2799
+[11/21 17:31:34     23s] <CMD> getDrawView
+[11/21 17:31:34     23s] <CMD> loadWorkspace -name Physical
+[11/21 17:31:35     23s] <CMD> win
+[11/21 17:32:52     26s] <CMD> set init_design_netlisttype verilog
+[11/21 17:32:52     26s] <CMD> set init_design_settop 1
+[11/21 17:32:52     26s] <CMD> set init_top_cell filter_adv
+[11/21 17:32:52     26s] <CMD> set init_verilog ../netlist/filter_adv.v
+[11/21 17:32:52     26s] <CMD> set init_lef_file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef
+[11/21 17:32:52     26s] <CMD> set init_gnd_net VSS
+[11/21 17:32:52     26s] <CMD> set init_pwr_net VDD
+[11/21 17:33:39     28s] <CMD> set init_mmmc_file mmm_design.tcl
+[11/21 17:33:39     28s] <CMD> init_design
+[11/21 17:33:39     28s] #% Begin Load MMMC data ... (date=11/21 17:33:39, mem=422.6M)
+[11/21 17:33:39     28s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> set init_mmmc_file mmm_design.tcl
+[11/21 17:33:48     28s] <CMD> init_design
+[11/21 17:33:48     28s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:33:48     28s] % Begin Load MMMC data ... (date=11/21 17:33:48, mem=422.7M)
+[11/21 17:33:48     28s] Extraction setup Delayed 
+[11/21 17:33:48     28s] Extraction setup Delayed 
+[11/21 17:33:48     28s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> set init_design_netlisttype verilog
+[11/21 17:34:34     30s] <CMD> set init_design_settop 1
+[11/21 17:34:34     30s] <CMD> set init_top_cell filter_adv
+[11/21 17:34:34     30s] <CMD> set init_verilog ../netlist/filter_adv.v
+[11/21 17:34:34     30s] <CMD> set init_lef_file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef
+[11/21 17:34:34     30s] <CMD> set init_gnd_net VSS
+[11/21 17:34:34     30s] <CMD> set init_pwr_net VDD
+[11/21 17:34:52     30s] <CMD> init_design
+[11/21 17:34:52     30s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:34:52     30s] % Begin Load MMMC data ... (date=11/21 17:34:52, mem=422.8M)
+[11/21 17:34:52     30s] Extraction setup Delayed 
+[11/21 17:34:52     30s] Extraction setup Delayed 
+[11/21 17:34:52     30s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:34:53     30s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:34:54     30s] % Begin Load MMMC data ... (date=11/21 17:34:53, mem=422.8M)
+[11/21 17:34:54     30s] Extraction setup Delayed 
+[11/21 17:34:54     30s] Extraction setup Delayed 
+[11/21 17:34:54     30s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:34:54     30s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:34:54     31s] % Begin Load MMMC data ... (date=11/21 17:34:54, mem=422.8M)
+[11/21 17:34:54     31s] Extraction setup Delayed 
+[11/21 17:34:54     31s] Extraction setup Delayed 
+[11/21 17:34:54     31s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:34:54     31s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:34:55     31s] % Begin Load MMMC data ... (date=11/21 17:34:54, mem=422.8M)
+[11/21 17:34:55     31s] Extraction setup Delayed 
+[11/21 17:34:55     31s] Extraction setup Delayed 
+[11/21 17:34:55     31s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:34:55     31s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:34:55     31s] % Begin Load MMMC data ... (date=11/21 17:34:55, mem=422.8M)
+[11/21 17:34:55     31s] Extraction setup Delayed 
+[11/21 17:34:55     31s] Extraction setup Delayed 
+[11/21 17:34:55     31s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:34:58     31s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:34:58     31s] % Begin Load MMMC data ... (date=11/21 17:34:58, mem=422.8M)
+[11/21 17:34:58     31s] Extraction setup Delayed 
+[11/21 17:34:58     31s] Extraction setup Delayed 
+[11/21 17:34:58     31s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:35:00     31s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:00     31s] % Begin Load MMMC data ... (date=11/21 17:35:00, mem=422.8M)
+[11/21 17:35:00     31s] Extraction setup Delayed 
+[11/21 17:35:00     31s] Extraction setup Delayed 
+[11/21 17:35:00     31s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:35:00     31s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:01     31s] % Begin Load MMMC data ... (date=11/21 17:35:00, mem=422.8M)
+[11/21 17:35:01     31s] Extraction setup Delayed 
+[11/21 17:35:01     31s] Extraction setup Delayed 
+[11/21 17:35:01     31s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:35:01     31s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:01     31s] % Begin Load MMMC data ... (date=11/21 17:35:01, mem=422.8M)
+[11/21 17:35:01     31s] Extraction setup Delayed 
+[11/21 17:35:01     31s] Extraction setup Delayed 
+[11/21 17:35:01     31s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:35:01     31s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:02     31s] % Begin Load MMMC data ... (date=11/21 17:35:01, mem=422.8M)
+[11/21 17:35:02     31s] Extraction setup Delayed 
+[11/21 17:35:02     31s] Extraction setup Delayed 
+[11/21 17:35:02     31s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:35:02     31s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:02     31s] % Begin Load MMMC data ... (date=11/21 17:35:02, mem=422.8M)
+[11/21 17:35:02     31s] Extraction setup Delayed 
+[11/21 17:35:02     31s] Extraction setup Delayed 
+[11/21 17:35:02     31s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:35:02     31s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:03     31s] % Begin Load MMMC data ... (date=11/21 17:35:02, mem=422.8M)
+[11/21 17:35:03     31s] Extraction setup Delayed 
+[11/21 17:35:03     31s] Extraction setup Delayed 
+[11/21 17:35:03     31s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:35:03     31s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:03     31s] % Begin Load MMMC data ... (date=11/21 17:35:03, mem=422.8M)
+[11/21 17:35:03     31s] Extraction setup Delayed 
+[11/21 17:35:03     31s] Extraction setup Delayed 
+[11/21 17:35:03     31s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:35:24     32s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:24     32s] % Begin Load MMMC data ... (date=11/21 17:35:24, mem=422.8M)
+[11/21 17:35:24     32s] Extraction setup Delayed 
+[11/21 17:35:24     32s] Extraction setup Delayed 
+[11/21 17:35:24     32s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:35:25     32s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:25     32s] % Begin Load MMMC data ... (date=11/21 17:35:25, mem=422.8M)
+[11/21 17:35:25     32s] Extraction setup Delayed 
+[11/21 17:35:25     32s] Extraction setup Delayed 
+[11/21 17:35:25     32s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:35:26     32s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:26     32s] % Begin Load MMMC data ... (date=11/21 17:35:26, mem=422.8M)
+[11/21 17:35:26     32s] Extraction setup Delayed 
+[11/21 17:35:26     32s] Extraction setup Delayed 
+[11/21 17:35:26     32s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:35:26     32s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:26     32s] % Begin Load MMMC data ... (date=11/21 17:35:26, mem=422.8M)
+[11/21 17:35:27     32s] Extraction setup Delayed 
+[11/21 17:35:27     32s] Extraction setup Delayed 
+[11/21 17:35:27     32s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:35:27     32s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:27     32s] % Begin Load MMMC data ... (date=11/21 17:35:27, mem=422.8M)
+[11/21 17:35:27     32s] Extraction setup Delayed 
+[11/21 17:35:27     32s] Extraction setup Delayed 
+[11/21 17:35:27     32s] **ERROR: (TCLCMD-989):	cannot open SDC file '../netlist/filter_adv.sdc' for mode 'SDC_layout'
+<CMD> init_design
+[11/21 17:35:27     32s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:27     32s] % Begin Load MMMC data ... (date=11/21 17:35:27, mem=422.8M)
+[11/21 17:35:27     32s] Extraction setup Delayed 
+[11/21 17:35:27     32s] Extraction setup Delayed 
+[11/21 17:35:27     32s] <CMD> init_design
+[11/21 17:35:27     32s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:28     32s] % Begin Load MMMC data ... (date=11/21 17:35:27, mem=422.8M)
+[11/21 17:35:28     32s] Extraction setup Delayed 
+[11/21 17:35:28     32s] Extraction setup Delayed 
+[11/21 17:35:28     32s] <CMD> init_design
+[11/21 17:35:28     32s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:28     32s] % Begin Load MMMC data ... (date=11/21 17:35:28, mem=422.8M)
+[11/21 17:35:28     32s] Extraction setup Delayed 
+[11/21 17:35:28     32s] Extraction setup Delayed 
+[11/21 17:35:28     32s] <CMD> init_design
+[11/21 17:35:28     32s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:35:28     32s] % Begin Load MMMC data ... (date=11/21 17:35:28, mem=422.8M)
+[11/21 17:35:29     32s] Extraction setup Delayed 
+[11/21 17:35:29     32s] Extraction setup Delayed 
+[11/21 17:37:26     36s] **ERROR: can't read "iir_": no such variable
+[11/21 17:38:34     38s] <CMD> set init_design_netlisttype verilog
+[11/21 17:38:34     38s] <CMD> set init_design_settop 1
+[11/21 17:38:34     38s] <CMD> set init_top_cell iir_filter_adv
+[11/21 17:38:34     38s] <CMD> set init_verilog ../netlist/iir_filter_adv.v
+[11/21 17:38:34     38s] <CMD> set init_lef_file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef
+[11/21 17:38:34     38s] <CMD> set init_gnd_net VSS
+[11/21 17:38:34     38s] <CMD> set init_pwr_net VDD
+[11/21 17:38:37     39s] <CMD> init_design
+[11/21 17:38:37     39s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/21 17:38:38     39s] % Begin Load MMMC data ... (date=11/21 17:38:37, mem=423.1M)
+[11/21 17:38:38     39s] Extraction setup Delayed 
+[11/21 17:38:38     39s] Extraction setup Delayed 
+[11/21 17:38:38     39s] % End Load MMMC data ... (date=11/21 17:38:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=423.1M, current mem=423.1M)
+[11/21 17:38:38     39s] 
+[11/21 17:38:38     39s] Loading LEF file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef ...
+[11/21 17:38:38     39s] Set DBUPerIGU to M2 pitch 380.
+[11/21 17:38:39     39s] 
+[11/21 17:38:39     39s] viaInitial starts at Sat Nov 21 17:38:39 2020
+viaInitial ends at Sat Nov 21 17:38:39 2020
+Loading view definition file from mmm_design.tcl
+[11/21 17:38:39     39s] Reading MY_LIBSET timing library '/software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib' ...
+[11/21 17:38:39     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:39     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:39     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:40     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:40     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:40     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:40     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:40     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:40     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:40     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:40     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:40     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:40     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:40     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:41     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:41     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:41     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:41     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:41     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:42     39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+[11/21 17:38:42     39s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[11/21 17:38:57     41s] Read 134 cells in library 'NangateOpenCellLibrary' 
+[11/21 17:38:57     41s] *** End library_loading (cpu=0.04min, real=0.30min, mem=22.9M, fe_cpu=0.69min, fe_real=10.43min, fe_mem=539.5M) ***
+[11/21 17:38:57     41s] % Begin Load netlist data ... (date=11/21 17:38:57, mem=518.1M)
+[11/21 17:38:57     41s] *** Begin netlist parsing (mem=539.5M) ***
+[11/21 17:38:57     41s] Created 134 new cells from 1 timing libraries.
+[11/21 17:38:57     41s] Reading netlist ...
+[11/21 17:38:57     41s] Backslashed names will retain backslash and a trailing blank character.
+[11/21 17:38:57     41s] Reading verilog netlist '../netlist/iir_filter_adv.v'
+[11/21 17:38:57     41s] 
+[11/21 17:38:57     41s] *** Memory Usage v#1 (Current mem = 539.480M, initial mem = 179.684M) ***
+[11/21 17:38:57     41s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=539.5M) ***
+[11/21 17:38:58     41s] % End Load netlist data ... (date=11/21 17:38:57, total cpu=0:00:00.1, real=0:00:01.0, peak res=518.1M, current mem=446.4M)
+[11/21 17:38:58     41s] **ERROR: (IMPSYC-300):	Cell iir_filter_adv not found.
+**ERROR: (IMPVL-904):	Can't set top cell to "iir_filter_adv" because it does not exist.  Exiting!
+[11/21 17:39:13     42s] 
+[11/21 17:39:13     42s] *** Memory Usage v#1 (Current mem = 540.488M, initial mem = 179.684M) ***
+[11/21 17:39:13     42s] 
+[11/21 17:39:13     42s] *** Summary of all messages that are not suppressed in this session:
+[11/21 17:39:13     42s] Severity  ID               Count  Summary                                  
+[11/21 17:39:13     42s] ERROR     IMPSYC-300           1  Cell %s not found.                       
+[11/21 17:39:13     42s] ERROR     IMPVL-904            2  Can't set top cell to "%s" because it do...
+[11/21 17:39:13     42s] ERROR     TCLCMD-989          20  cannot open SDC file '%s' for mode '%s'  
+[11/21 17:39:13     42s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[11/21 17:39:13     42s] *** Message Summary: 20 warning(s), 23 error(s)
+[11/21 17:39:13     42s] 
+[11/21 17:39:13     42s] --- Ending "Innovus" (totcpu=0:00:42.2, real=0:10:42, mem=540.5M) ---

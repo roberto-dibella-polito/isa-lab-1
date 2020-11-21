@@ -1,0 +1,92 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Nov 21 18:33:00 2020                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+#@(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+#@(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+#@(#)CDS: CPE v17.11-s095
+#@(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getDrawView
+loadWorkspace -name Physical
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign /home/isa32/DELIVER/isa-lab-1/2_advanced_architecture/Implementation/innovus/filter_adv.enc.dat filter_adv
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+setPlaceMode -prerouteAsObs {1 2 3 4 5 6 7 8}
+setPlaceMode -fp false
+placeDesign
+gui_select -rect {79.409 71.933 -28.567 18.728}
+deselectAll
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference mGrid -isVisible 1
+setLayerPreference pGrid -isVisible 1
+setLayerPreference userGrid -isVisible 1
+setLayerPreference iGrid -isVisible 1
+setLayerPreference fmGrid -isVisible 1
+setLayerPreference fiGrid -isVisible 1
+setLayerPreference fpGrid -isVisible 1
+setLayerPreference gcell -isVisible 1
+setLayerPreference trimGridObj -isVisible 1
+setLayerPreference pgViaGridObj -isVisible 1
+setLayerPreference mGrid -isVisible 0
+setLayerPreference pGrid -isVisible 0
+setLayerPreference userGrid -isVisible 0
+setLayerPreference iGrid -isVisible 0
+setLayerPreference fmGrid -isVisible 0
+setLayerPreference fiGrid -isVisible 0
+setLayerPreference fpGrid -isVisible 0
+setLayerPreference gcell -isVisible 0
+setLayerPreference trimGridObj -isVisible 0
+setLayerPreference pgViaGridObj -isVisible 0
+setLayerPreference overlapMacro -isVisible 1
+setLayerPreference overlapGuide -isVisible 1
+setLayerPreference overlapBlk -isVisible 1
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference pinObj -isSelectable 1
+setLayerPreference cellBlkgObj -isSelectable 1
+setLayerPreference layoutObj -isSelectable 1
+setLayerPreference sitePattern -isVisible 1
+setLayerPreference macroSitePattern -isVisible 1
+setLayerPreference stdRow -isSelectable 1
+setLayerPreference sitePattern -isSelectable 1
+setLayerPreference macroSitePattern -isSelectable 1
+setDrawView place
+fit
+reset_parasitics
+extractRC
+reset_parasitics
+extractRC
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix filter_adv_postRoute -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -hold -pathReports -slackReports -numPaths 50 -prefix filter_adv_preCTS -outDir timingReports
+verifyConnectivity -type all -error 1000 -warning 50
+setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+verifyGeometry
+setVerifyGeometryMode -area { 0 0 0 0 }
+reportGateCount -level 5 -limit 100 -outfile filter_adv.gateCount
+saveNetlist filter_adv_routed.v
+all_hold_analysis_views 
+all_setup_analysis_views 
+write_sdf  -ideal_clock_network filter_adv_routed.sdf
