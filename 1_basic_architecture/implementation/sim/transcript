@@ -8,7 +8,7 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-source "compilation.tcl"
+source "scripts/switching_record.tcl"
 # Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
 # -- Loading package standard
 # -- Compiling package constants
@@ -37,32 +37,45 @@ source "compilation.tcl"
 # -- Loading package std_logic_textio
 # -- Compiling entity data_sink
 # -- Compiling architecture bhv of data_sink
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity fd
-# -- Compiling architecture structure of fd
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity reg_n
-# -- Compiling architecture bhv of reg_n
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Loading package constants
-# -- Compiling entity filter
-# -- Compiling architecture bhv of filter
+# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+# -- Compiling module filter
+# 
+# Top level modules:
+# 	filter
 # Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
 # -- Compiling module tb_iir
 # 
 # Top level modules:
 # 	tb_iir
-# vsim work.tb_iir 
+# vsim -L /software/dk/nangate45/verilog/msim6.2g work.tb_iir 
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.tb_iir(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI33_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.INV_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI21_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XNOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI221_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI22_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI211_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AND3_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI21_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI22_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND4_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI222_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI221_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.DFFR_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.BUF_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XOR2_X2(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI211_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AND2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.HA_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.FA_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI222_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND3_X1(fast)
 # Loading /software/mentor/modelsim_6.2g/linux/../std.standard
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
@@ -71,10 +84,109 @@ source "compilation.tcl"
 # Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
 # Loading work.data_maker(bhv)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
-# Loading work.constants
-# Loading work.filter(bhv)#1
-# Loading work.reg_n(bhv)#1
-# Loading work.reg_n(bhv)#2
-# Loading work.fd(structure)
+# ** Warning: (vsim-3017) ../netlist/iir_filter.v(391): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_iir/DUT/f_d1_Q_reg
+# ** Warning: (vsim-3017) ../netlist/iir_filter.v(392): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_iir/DUT/f_d2_Q_reg
 # Loading work.data_sink(bhv)
+# vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb_iir/DUT=../netlist/iir_filter.sdf work.tb_iir 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_iir(fast)
+# Loading work.filter(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI33_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.INV_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI21_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XNOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI221_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI22_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI211_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AND3_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI21_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI22_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND4_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI222_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI221_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.DFFR_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.BUF_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XOR2_X2(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI211_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AND2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.HA_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.FA_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI222_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND3_X1(fast)
+# Loading instances from ../netlist/iir_filter.sdf
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading work.clk_gen(bhv)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.data_maker(bhv)
+# ** Warning: (vsim-3017) ../netlist/iir_filter.v(391): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_iir/DUT/f_d1_Q_reg
+# ** Warning: (vsim-3017) ../netlist/iir_filter.v(392): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_iir/DUT/f_d2_Q_reg
+# Loading work.data_sink(bhv)
+# Loading timing data from ../netlist/iir_filter.sdf
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/f_d2_Q_reg
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/f_d1_Q_reg
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_2_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_1_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_0_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_4_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_5_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_6_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_3_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_7_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_Q_reg_7_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_Q_reg_5_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_Q_reg_4_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_Q_reg_6_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_Q_reg_8_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_Q_reg_3_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_Q_reg_1_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_Q_reg_2_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_Q_reg_0_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_7_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_6_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_5_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_4_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_3_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_2_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_1_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_0_
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Region: /tb_iir  File: ../tb/tb_iir.v
