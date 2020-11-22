@@ -5,14 +5,14 @@ vcom -93 -work ./work ../src/data_maker.vhd
 vcom -93 -work ./work ../src/data_sink_syn.vhd
 
 #To compile the verilog type:
-vlog -work ./work ../netlist/iir_filter.v
+vlog -work ./work ../innovus/filter.v
 vlog -work ./work ../tb/tb_iir.v
 
 
 vsim -L /software/dk/nangate45/verilog/msim6.2g work.tb_iir
 
 #Linking the delay file .sdf
-vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb_iir/DUT=../netlist/iir_filter.sdf work.tb_iir
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb_iir/DUT=../innovus/filter.sdf work.tb_iir
 
 vcd file ../vcd/design.vcd
 

@@ -8,40 +8,7 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-vlib work
-vcom -93 -work ./work ../src/constants.vhd
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Compiling package constants
-vcom -93 -work ./work ../src/clk_gen.vhd
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity clk_gen
-# -- Compiling architecture bhv of clk_gen
-vcom -93 -work ./work ../src/data_maker.vhd
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_maker
-# -- Compiling architecture bhv of data_maker
-vcom -93 -work ./work ../src/data_sink.vhd
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package textio
-# -- Loading package std_logic_textio
-# -- Compiling entity data_sink
-# -- Compiling architecture bhv of data_sink
-source "scripts/switching_record.tcl"
+source "scripts/post_route_power.tcl"
 # Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
 # -- Loading package standard
 # -- Compiling package constants
@@ -83,9 +50,9 @@ source "scripts/switching_record.tcl"
 # vsim -L /software/dk/nangate45/verilog/msim6.2g work.tb_iir 
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.tb_iir(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.INV_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.XOR2_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.FA_X1(fast)
-# Loading /software/dk/nangate45/verilog/msim6.2g.INV_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.NAND2_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.OAI22_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.AND2_X1(fast)
@@ -95,7 +62,6 @@ source "scripts/switching_record.tcl"
 # Loading /software/dk/nangate45/verilog/msim6.2g.AOI21_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.OAI21_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.NOR2_X1(fast)
-# Loading /software/dk/nangate45/verilog/msim6.2g.BUF_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.DFFR_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.XOR2_X2(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.NOR3_X1(fast)
@@ -114,22 +80,22 @@ source "scripts/switching_record.tcl"
 # Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
 # Loading work.data_maker(bhv)
-# ** Warning: (vsim-3017) ../netlist/iir_filter_adv.v(601): [TFMPC] - Too few port connections. Expected 5, found 4.
+# ** Warning: (vsim-3017) ../innovus/filter_adv_routed.v(1877): [TFMPC] - Too few port connections. Expected 5, found 4.
 #         Region: /tb_iir/DUT/f_d1_Q_reg
-# ** Warning: (vsim-3017) ../netlist/iir_filter_adv.v(602): [TFMPC] - Too few port connections. Expected 5, found 4.
+# ** Warning: (vsim-3017) ../innovus/filter_adv_routed.v(1881): [TFMPC] - Too few port connections. Expected 5, found 4.
 #         Region: /tb_iir/DUT/f_pipe1_Q_reg
-# ** Warning: (vsim-3017) ../netlist/iir_filter_adv.v(604): [TFMPC] - Too few port connections. Expected 5, found 4.
+# ** Warning: (vsim-3017) ../innovus/filter_adv_routed.v(1885): [TFMPC] - Too few port connections. Expected 5, found 4.
 #         Region: /tb_iir/DUT/f_pipe2_Q_reg
-# ** Warning: (vsim-3017) ../netlist/iir_filter_adv.v(605): [TFMPC] - Too few port connections. Expected 5, found 4.
+# ** Warning: (vsim-3017) ../innovus/filter_adv_routed.v(1889): [TFMPC] - Too few port connections. Expected 5, found 4.
 #         Region: /tb_iir/DUT/f_d2_Q_reg
 # Loading work.data_sink(bhv)
-# vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb_iir/DUT=../netlist/iir_filter_adv.sdf work.tb_iir 
+# vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb_iir/DUT=../innovus/filter_adv_routed.sdf work.tb_iir 
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.tb_iir(fast)
 # Loading work.filter_adv(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.INV_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.XOR2_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.FA_X1(fast)
-# Loading /software/dk/nangate45/verilog/msim6.2g.INV_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.NAND2_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.OAI22_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.AND2_X1(fast)
@@ -139,7 +105,6 @@ source "scripts/switching_record.tcl"
 # Loading /software/dk/nangate45/verilog/msim6.2g.AOI21_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.OAI21_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.NOR2_X1(fast)
-# Loading /software/dk/nangate45/verilog/msim6.2g.BUF_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.DFFR_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.XOR2_X2(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.NOR3_X1(fast)
@@ -150,7 +115,7 @@ source "scripts/switching_record.tcl"
 # Loading /software/dk/nangate45/verilog/msim6.2g.NAND3_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.OR3_X1(fast)
 # Loading /software/dk/nangate45/verilog/msim6.2g.OAI222_X1(fast)
-# Loading instances from ../netlist/iir_filter_adv.sdf
+# Loading instances from ../innovus/filter_adv_routed.sdf
 # Loading /software/mentor/modelsim_6.2g/linux/../std.standard
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
@@ -159,216 +124,15 @@ source "scripts/switching_record.tcl"
 # Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
 # Loading work.data_maker(bhv)
-# ** Warning: (vsim-3017) ../netlist/iir_filter_adv.v(601): [TFMPC] - Too few port connections. Expected 5, found 4.
+# ** Warning: (vsim-3017) ../innovus/filter_adv_routed.v(1877): [TFMPC] - Too few port connections. Expected 5, found 4.
 #         Region: /tb_iir/DUT/f_d1_Q_reg
-# ** Warning: (vsim-3017) ../netlist/iir_filter_adv.v(602): [TFMPC] - Too few port connections. Expected 5, found 4.
+# ** Warning: (vsim-3017) ../innovus/filter_adv_routed.v(1881): [TFMPC] - Too few port connections. Expected 5, found 4.
 #         Region: /tb_iir/DUT/f_pipe1_Q_reg
-# ** Warning: (vsim-3017) ../netlist/iir_filter_adv.v(604): [TFMPC] - Too few port connections. Expected 5, found 4.
+# ** Warning: (vsim-3017) ../innovus/filter_adv_routed.v(1885): [TFMPC] - Too few port connections. Expected 5, found 4.
 #         Region: /tb_iir/DUT/f_pipe2_Q_reg
-# ** Warning: (vsim-3017) ../netlist/iir_filter_adv.v(605): [TFMPC] - Too few port connections. Expected 5, found 4.
+# ** Warning: (vsim-3017) ../innovus/filter_adv_routed.v(1889): [TFMPC] - Too few port connections. Expected 5, found 4.
 #         Region: /tb_iir/DUT/f_d2_Q_reg
 # Loading work.data_sink(bhv)
-# Loading timing data from ../netlist/iir_filter_adv.sdf
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_4_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_3_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_2_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_0_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_5_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_6_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_out_Q_reg_7_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_3_Q_reg_5_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_3_Q_reg_0_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_3_Q_reg_4_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_3_Q_reg_3_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_3_Q_reg_2_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_3_Q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_3_Q_reg_6_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_2_Q_reg_5_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_2_Q_reg_0_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_2_Q_reg_3_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_2_Q_reg_2_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_2_Q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_2_Q_reg_4_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_2_Q_reg_6_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_1_Q_reg_0_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_1_Q_reg_5_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_1_Q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_1_Q_reg_3_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_1_Q_reg_2_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_1_Q_reg_4_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_1_Q_reg_6_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_0_Q_reg_0_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_0_Q_reg_5_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_0_Q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_0_Q_reg_3_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_0_Q_reg_2_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_0_Q_reg_4_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl2_reg_0_Q_reg_6_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_2_Q_reg_8_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_2_Q_reg_7_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_2_Q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_2_Q_reg_6_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_2_Q_reg_5_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_2_Q_reg_2_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_2_Q_reg_3_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_2_Q_reg_4_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_2_Q_reg_0_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_1_Q_reg_8_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_1_Q_reg_4_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_1_Q_reg_0_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_1_Q_reg_3_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_1_Q_reg_6_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_1_Q_reg_2_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_1_Q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_1_Q_reg_7_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_1_Q_reg_5_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_0_Q_reg_8_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_0_Q_reg_7_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_0_Q_reg_6_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_0_Q_reg_5_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_0_Q_reg_4_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_0_Q_reg_3_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_0_Q_reg_2_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_0_Q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/pl1_reg_0_Q_reg_0_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_w_2_Q_reg_8_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_w_2_Q_reg_7_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_w_2_Q_reg_6_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_w_2_Q_reg_5_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_w_2_Q_reg_4_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_w_2_Q_reg_3_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_w_2_Q_reg_2_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_w_2_Q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_w_2_Q_reg_0_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_2_Q_reg_5_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_2_Q_reg_0_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_2_Q_reg_3_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_2_Q_reg_4_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_2_Q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_2_Q_reg_2_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_2_Q_reg_6_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_1_Q_reg_8_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_1_Q_reg_7_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_1_Q_reg_6_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_1_Q_reg_5_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_1_Q_reg_4_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_1_Q_reg_3_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_1_Q_reg_2_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_1_Q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_filter_1_Q_reg_0_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_7_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_6_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_5_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_4_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_3_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_2_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/reg_in_Q_reg_0_
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/f_d2_Q_reg
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/f_pipe2_Q_reg
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/f_pipe1_Q_reg
-# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_iir/DUT/f_d1_Q_reg
+# Loading timing data from ../innovus/filter_adv_routed.sdf
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 ns  Iteration: 0  Region: /tb_iir  File: ../tb/tb_iir_adv.v
-exit
